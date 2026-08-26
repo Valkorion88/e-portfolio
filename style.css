@@ -46,6 +46,7 @@ li {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 .text--color {
@@ -102,7 +103,7 @@ nav {
 
 .nav__link--list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 25px;
 }
 
@@ -226,6 +227,7 @@ nav {
 
 .language__list {
   display: flex;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -387,5 +389,61 @@ footer {
 @media (max-width: 768px) {
   nav {
     height: 68px;
+  }
+
+  .nav__link--list {
+    padding-top: 2px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .about-me__info--para {
+    font-size: 18px;
+  }
+
+  .language {
+    width: calc(100% / 3);
+  }
+
+  .project__description--para {
+    font-size: 14px;
+  }
+
+  .project__description {
+    left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
+
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project__description--title {
+    line-height: 1;
+    text-align: center;
+
+  .project__description--sub-title {
+    text-align: center;
   }
 }
