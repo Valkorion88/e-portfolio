@@ -155,6 +155,7 @@ nav {
 .about-me__info {
   display: flex;
   flex-direction: column;
+  background-color: antiquewhite;
 }
 
 .about-me__info--container {
@@ -364,6 +365,7 @@ nav {
 
 .project__list {
   padding-top: 50px;
+  background-color: antiquewhite;
 }
 
 .project__description {
@@ -394,7 +396,7 @@ nav {
 .project__description--sub-title,
 .project__description--link,
 .project__description--para {
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
@@ -454,7 +456,7 @@ footer {
 
 @media (max-width: 768px) {
   nav {
-    height: 68px;
+    height: 12vh;
   }
 
   .nav__link--list {
